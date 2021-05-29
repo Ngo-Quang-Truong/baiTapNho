@@ -10,6 +10,9 @@ var port = 6060                   // Port của localhost do mình chọn
 app.use(express.static("public"))
 app.set("views engine", "ejs")
 app.set("views", "./views")
+  
+
+
 
 var server = require("http").Server(app)
 var io = require('socket.io')(server)
